@@ -33,6 +33,15 @@ public class MainActivityBai5 extends AppCompatActivity {
         TextView textView1 = findViewById(R.id.textView3);
         Button button = findViewById(R.id.button2);
 
+        Button exitb = findViewById(R.id.button6);
+
+        exitb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

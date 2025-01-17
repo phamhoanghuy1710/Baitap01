@@ -1,5 +1,6 @@
 package com.example.baitap01;
 
+import android.content.Intent;
 import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,14 @@ public class MainActivityBai4 extends AppCompatActivity {
         });
 
         Button button = findViewById(R.id.button4);
+        Button exitb = findViewById(R.id.button5);
+
+        exitb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
